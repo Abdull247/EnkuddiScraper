@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: enkuddi-scraper-api
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: node api-server.js
+    envVars:
+      - key: NODE_VERSION
+        value: 18.17.0
+      - key: PORT
+        value: 3000
