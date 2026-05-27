@@ -1,7 +1,7 @@
 const express = require('express');
 const cors = require('cors');
 const rateLimit = require('express-rate-limit');
-const { scrapeFromURL } = require('./vid_page_scraper.js'); // Video page scraper
+const { scrapeFromURL } = require('./scraper.js'); // Video page scraper
 const { scrapeHomepage } = require('./scraper.js'); // Main homepage scraper
 const app = express();
 const PORT = process.env.PORT || 3000;
